@@ -15,5 +15,11 @@ namespace pract1
         public float Range;
         public double Calibre;
 
+        public Weapon(string name, float range, double calibre)
+        {
+            Name = name;
+            Range = range;
+            Calibre = calibre;
+        }
     }
 }
