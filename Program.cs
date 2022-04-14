@@ -9,5 +9,11 @@ namespace pract1
 
         }
     }
+    class Weapon
+    {
+        public string Name;
+        public float Range;
+        public double Calibre;
 
+    }
 }
