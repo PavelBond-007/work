@@ -6,7 +6,16 @@ namespace pract1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите название: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Введите дистанцию: ");
+            float range = (float)Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите калибр: ");
+            double calibre = Convert.ToDouble(Console.ReadLine());
 
+            Weapon gun = new(name, range, calibre);
+
+            Console.WriteLine(gun.Name + " " + gun.Range + " " + gun.Calibre);
         }
     }
     class Weapon
